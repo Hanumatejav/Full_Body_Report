@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Sharing</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            width: 100%;
+            max-width: 430px;
+            padding: 40px 25px;
+            border-radius: 22px;
+            text-align: center;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+        }
+
+        .pdf-icon {
+            font-size: 65px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #222;
+            margin-bottom: 12px;
+        }
+
+        p {
+            color: #777;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .btn {
+            display: block;
+            text-decoration: none;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 12px;
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .view {
+            background: #6366f1;
+        }
+
+        .download {
+            background: #16a34a;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            opacity: 0.9;
+        }
+
+        footer {
+            margin-top: 25px;
+            font-size: 12px;
+            color: #aaa;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="pdf-icon">📄</div>
+
+        <h1>Your PDF is Ready!</h1>
+
+        <p>
+            You can either view the document
+            online or download it to your device.
+        </p>
+
+        <a href="Full_Body_Report.pdf"
+           class="btn view">
+            👁 View PDF
+        </a>
+
+        <a href="Full_Body_Report.pdf"
+           download="Full_Body_Report.pdf"
+           class="btn download">
+            ⬇ Download PDF
+        </a>
+
+        <footer>
+            Simple. Fast. Accessible Everywhere.
+        </footer>
+
+    </div>
+
+</body>
+</html>
